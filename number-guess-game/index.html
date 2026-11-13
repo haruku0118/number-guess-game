@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数字当てゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>🎮 数字当てゲーム</h1>
+    <p>1〜100の数字を当てよう！</p>
+
+    <div class="number">❓</div>
+
+    <input
+      type="number"
+      id="guess"
+      placeholder="数字を入力"
+      min="1"
+      max="100"
+    >
+
+    <button id="checkBtn" onclick="checkGuess()">
+      回答する
+    </button>
+
+    <p id="message">数字を入力して挑戦！</p>
+    <p>挑戦回数：<span id="count">0</span>回</p>
+
+    <button class="reset" onclick="resetGame()">
+      🔄 もう一度遊ぶ
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
